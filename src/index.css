@@ -1,0 +1,61 @@
+.pokemon-container {
+  display: grid; /* Utiliza CSS Grid para organizar os Pokémon em colunas */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define as colunas com largura mínima de 200px */
+  gap: 20px; /* Espaçamento entre os Pokémon */
+  justify-items: center; /* Centraliza os Pokémon horizontalmente */
+}
+
+.pokemon-card {
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  background-color: #fff; /* Cor de fundo branca para cada cartão de Pokémon */
+}
+
+.pokemon-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-header {
+  background-color: #007bff; /* Cor de fundo azul para o cabeçalho do Pokémon */
+  padding: 5px;
+}
+
+.pokemon-name {
+  margin: 0;
+  font-size: 16px;
+  color: #fff; /* Cor do texto branco para o nome do Pokémon */
+}
+
+.pokemon-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pokemon-details {
+  padding: 10px;
+}
+
+.pokemon-type {
+  margin: 0;
+  font-size: 14px;
+}
+
+.toggle-description {
+  background-color: #28a745; /* Cor de fundo verde para o botão de detalhes do Pokémon */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toggle-description:hover {
+  background-color: #218838; /* Cor de fundo verde escuro ao passar o mouse sobre o botão de detalhes do Pokémon */
+}
